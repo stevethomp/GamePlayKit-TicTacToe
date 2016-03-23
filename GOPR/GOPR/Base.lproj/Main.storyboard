@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ARCADE_I.TTF">
+            <string>ArcadeInterlaced</string>
+            <string>ArcadeInterlaced</string>
+            <string>ArcadeInterlaced</string>
+            <string>ArcadeInterlaced</string>
+            <string>ArcadeInterlaced</string>
+            <string>ArcadeInterlaced</string>
+            <string>ArcadeInterlaced</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="GOPR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" alpha="0.0" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="UFt-4r-j8w">
+                                <rect key="frame" x="220" y="835" width="628" height="225"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeF-wl-kKP">
+                                        <rect key="frame" x="0.0" y="0.0" width="628" height="45"/>
+                                        <fontDescription key="fontDescription" name="ArcadeInterlaced" family="Arcade Interlaced" pointSize="25"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="poker">
+                                            <color key="titleColor" red="0.77647058820000003" green="0.93725490199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="focused">
+                                            <color key="titleShadowColor" red="0.77647058820000003" green="0.93725490199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="DMb-hh-CQc" kind="show" id="1Y2-s5-34P"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbb-My-tMX">
+                                        <rect key="frame" x="0.0" y="45" width="628" height="45"/>
+                                        <fontDescription key="fontDescription" name="ArcadeInterlaced" family="Arcade Interlaced" pointSize="25"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Tic Tac Toe">
+                                            <color key="titleColor" red="0.77647058820000003" green="0.93725490199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="focused">
+                                            <color key="titleShadowColor" red="0.77647058820000003" green="0.93725490199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="206-8e-07a" kind="show" id="srA-7b-P09"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBb-XI-FuT" userLabel="Global thermonuclear war">
+                                        <rect key="frame" x="0.0" y="90" width="628" height="45"/>
+                                        <fontDescription key="fontDescription" name="ArcadeInterlaced" family="Arcade Interlaced" pointSize="25"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="global thermonuclear war">
+                                            <color key="titleColor" red="0.77647058820000003" green="0.93725490199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="focused">
+                                            <color key="titleShadowColor" red="0.77647058820000003" green="0.93725490199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gTNWButtonAction:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="XL4-pF-tS6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYX-0x-AQm">
+                                        <rect key="frame" x="0.0" y="135" width="628" height="45"/>
+                                        <fontDescription key="fontDescription" name="ArcadeInterlaced" family="Arcade Interlaced" pointSize="25"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="chess">
+                                            <color key="titleColor" red="0.77647058820000003" green="0.93725490199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="focused">
+                                            <color key="titleShadowColor" red="0.77647058820000003" green="0.93725490199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t0X-6a-DvW">
+                                        <rect key="frame" x="0.0" y="180" width="628" height="45"/>
+                                        <fontDescription key="fontDescription" name="ArcadeInterlaced" family="Arcade Interlaced" pointSize="25"/>
+                                        <inset key="contentEdgeInsets" minX="40" minY="20" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="battle chess">
+                                            <color key="titleColor" red="0.77647058820000003" green="0.93725490199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="focused">
+                                            <color key="titleShadowColor" red="0.77647058820000003" green="0.93725490199999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEH-eN-bbG">
+                                <rect key="frame" x="220" y="40" width="1480" height="795"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.77647058823529413" green="0.93725490196078431" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="ArcadeInterlaced" family="Arcade Interlaced" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xVK-up-7Dk"/>
+                                </connections>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="UFt-4r-j8w" firstAttribute="leading" secondItem="yEH-eN-bbG" secondAttribute="leading" id="GE3-Ui-ccy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yEH-eN-bbG" secondAttribute="trailing" constant="200" id="O6q-Ee-8Jq"/>
+                            <constraint firstItem="yEH-eN-bbG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="200" id="Rzy-ut-6io"/>
+                            <constraint firstItem="yEH-eN-bbG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="gdD-7T-qnk"/>
+                            <constraint firstItem="UFt-4r-j8w" firstAttribute="top" secondItem="yEH-eN-bbG" secondAttribute="bottom" id="nMj-Ki-fv2"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UFt-4r-j8w" secondAttribute="bottom" constant="20" id="rsf-Wh-nI8"/>
+                            <constraint firstItem="yEH-eN-bbG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vZ3-p9-cc4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="butonStack" destination="UFt-4r-j8w" id="1ym-8K-h4F"/>
+                        <outlet property="textView" destination="yEH-eN-bbG" id="xSd-G7-B4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="388"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o2Q-Lv-XCT">
+            <objects>
+                <viewController id="DMb-hh-CQc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iuc-QD-2o8"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZLu-WJ-5LS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RJz-3n-Mzw">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hWi-0U-dV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2537" y="404"/>
+        </scene>
+        <!--Tic Tac Toe View Controller-->
+        <scene sceneID="jep-11-NTX">
+            <objects>
+                <viewController id="206-8e-07a" customClass="TicTacToeViewController" customModule="GOPR" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hB3-eW-AYc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dbf-tR-YCx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wOE-cZ-y7H">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="teh-6P-8Tr">
+                                <rect key="frame" x="660" y="240" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="Ckf-w6-4dW"/>
+                                    <constraint firstAttribute="height" constant="600" id="fzd-5N-dlR"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ech-0D-rLb">
+                                    <size key="itemSize" width="190" height="190"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TicTacToeCollectionViewCell" id="yv6-Hf-Jdb" customClass="TicTacToeCollectionViewCell" customModule="GOPR" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cN7-E3-3P7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="190" height="190"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="cN7-E3-3P7" firstAttribute="top" secondItem="yv6-Hf-Jdb" secondAttribute="top" id="G0j-EJ-2P1"/>
+                                            <constraint firstAttribute="bottom" secondItem="cN7-E3-3P7" secondAttribute="bottom" id="Q04-SS-a4G"/>
+                                            <constraint firstAttribute="trailing" secondItem="cN7-E3-3P7" secondAttribute="trailing" id="RaO-QR-ebu"/>
+                                            <constraint firstItem="cN7-E3-3P7" firstAttribute="leading" secondItem="yv6-Hf-Jdb" secondAttribute="leading" id="ehz-Sc-bNu"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="cN7-E3-3P7" id="D2T-fH-GFK"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="206-8e-07a" id="dxW-aP-SlW"/>
+                                    <outlet property="delegate" destination="206-8e-07a" id="8en-GX-17F"/>
+                                </connections>
+                            </collectionView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameboard" translatesAutoresizingMaskIntoConstraints="NO" id="jph-r5-G2o">
+                                <rect key="frame" x="660" y="240" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="jOt-Uu-M6c"/>
+                                    <constraint firstAttribute="width" constant="600" id="jai-aZ-nlq"/>
+                                </constraints>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWr-YZ-qNw">
+                                <rect key="frame" x="798" y="893" width="325" height="65"/>
+                                <fontDescription key="fontDescription" name="ArcadeInterlaced" family="Arcade Interlaced" pointSize="25"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="resetGame" destination="206-8e-07a" eventType="primaryActionTriggered" id="HfR-AW-ZEo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dbf-tR-YCx" firstAttribute="top" secondItem="yWr-YZ-qNw" secondAttribute="bottom" constant="122" id="0z2-CL-7qe"/>
+                            <constraint firstItem="jph-r5-G2o" firstAttribute="centerX" secondItem="wOE-cZ-y7H" secondAttribute="centerX" id="PJm-CA-1sk"/>
+                            <constraint firstItem="yWr-YZ-qNw" firstAttribute="centerX" secondItem="wOE-cZ-y7H" secondAttribute="centerX" id="RAY-VZ-aJe"/>
+                            <constraint firstItem="teh-6P-8Tr" firstAttribute="centerY" secondItem="wOE-cZ-y7H" secondAttribute="centerY" id="hdU-Dm-Tcq"/>
+                            <constraint firstItem="jph-r5-G2o" firstAttribute="centerY" secondItem="wOE-cZ-y7H" secondAttribute="centerY" id="mmw-hT-A9K"/>
+                            <constraint firstItem="teh-6P-8Tr" firstAttribute="centerX" secondItem="wOE-cZ-y7H" secondAttribute="centerX" id="pyg-WS-bYC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="teh-6P-8Tr" id="u4T-aE-5e4"/>
+                        <outlet property="playAgainButton" destination="yWr-YZ-qNw" id="2zq-yB-yjS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gqI-YI-8TQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="325" y="1819"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gameboard" width="600" height="600"/>
+    </resources>
+</document>
